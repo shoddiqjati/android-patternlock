@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SetPattern"/>
+        <activity android:name=".SetPattern" />
+        <activity android:name=".ConfirmPattern"/>
+        <activity
+            android:name=".PatternActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PinActivity"
+            android:parentActivityName=".PinActivity"></activity>
     </application>
+
 </manifest>
