@@ -1,6 +1,7 @@
-package com.onevest.dev.patternlock;
+package com.onevest.dev.patternlock.pattern;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.onevest.dev.patternlock.utils.PrefsManager;
 
@@ -23,5 +24,6 @@ public class SetPattern extends SetPatternActivity {
         String patternSha1 = PatternUtils.patternToSha1String(pattern);
         prefs.setLockPattern(patternSha1);
         prefs.setPatterStatus(true);
+        Toast.makeText(this, "Pattern has been set", Toast.LENGTH_LONG).show();
     }
 }

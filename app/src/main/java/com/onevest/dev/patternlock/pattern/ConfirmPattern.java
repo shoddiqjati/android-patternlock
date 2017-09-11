@@ -1,8 +1,10 @@
-package com.onevest.dev.patternlock;
+package com.onevest.dev.patternlock.pattern;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 
+import com.onevest.dev.patternlock.MainActivity;
 import com.onevest.dev.patternlock.utils.PrefsManager;
 
 import java.util.List;

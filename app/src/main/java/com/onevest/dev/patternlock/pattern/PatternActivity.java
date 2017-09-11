@@ -1,10 +1,12 @@
-package com.onevest.dev.patternlock;
+package com.onevest.dev.patternlock.pattern;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
 
+import com.onevest.dev.patternlock.R;
 import com.onevest.dev.patternlock.utils.PrefsManager;
 
 import butterknife.BindView;
@@ -28,6 +30,7 @@ public class PatternActivity extends AppCompatActivity {
     public void removeHandler() {
         prefsManager.removeLockPattern();
         prefsManager.setPatterStatus(false);
+        Toast.makeText(this, "Pattern has been removed", Toast.LENGTH_LONG).show();
     }
 
     private PrefsManager prefsManager;

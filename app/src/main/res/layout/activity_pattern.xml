@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.onevest.dev.patternlock.PatternActivity">
+    tools:context="com.onevest.dev.patternlock.pattern.PatternActivity"
+    android:background="@color/colorPrimary">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,12 +18,14 @@
             android:layout_width="match_parent"
             android:layout_height="72dp"
             android:layout_marginBottom="32dp"
-            android:text="set pattern" />
+            android:text="set pattern"
+            style="@style/Base.Widget.AppCompat.Button.Colored"/>
 
         <Button
             android:id="@+id/remove_pattern"
             android:layout_width="match_parent"
             android:layout_height="72dp"
-            android:text="remove pattern" />
+            android:text="remove pattern"
+            style="@style/Base.Widget.AppCompat.Button.Colored"/>
     </LinearLayout>
 </RelativeLayout>

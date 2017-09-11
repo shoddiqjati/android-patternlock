@@ -9,21 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SetPattern" />
-        <activity android:name=".ConfirmPattern"/>
+        <activity android:name=".pattern.SetPattern" />
+        <activity android:name=".pattern.ConfirmPattern" />
+        <activity android:name=".pin.SetPin" />
         <activity
-            android:name=".PatternActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name=".pattern.PatternActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
-            android:name=".PinActivity"
-            android:parentActivityName=".PinActivity"></activity>
+            android:name=".pin.PinActivity"
+            android:parentActivityName=".pin.PinActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
+import com.onevest.dev.patternlock.pattern.PatternActivity;
+import com.onevest.dev.patternlock.pin.PinActivity;
 import com.onevest.dev.patternlock.utils.PrefsManager;
 
 import butterknife.BindView;
